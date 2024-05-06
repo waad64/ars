@@ -25,7 +25,7 @@ merged_df = merged_df.fillna(0)
 X = merged_df.drop(columns=[1])
 
 # Application de l'algorithme K-Means
-kmeans = KMeans(n_clusters=3)  # Modifier le nombre de clusters selon votre besoin
+kmeans = KMeans(n_clusters=3) 
 clusters = kmeans.fit_predict(X)
 
 # Ajout des clusters au DataFrame
